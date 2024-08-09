@@ -1,0 +1,125 @@
+/* Ajout d'une valeur par défaut pour la transition */
+:root {
+    --transition-speed: 200ms;
+    background: #ffd700;
+}
+
+.container {
+    padding: 12px;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    transition: width var(--transition-speed) ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:first-child {
+    margin-bottom: auto;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: filter var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    color: white;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link img {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+/* Grand écran */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+}
+
+/* Petit écran */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .nav-link {
+        height: auto;
+    }
+
+    .link-text {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+.nav-link img {
+    margin-left: 0px;
+}

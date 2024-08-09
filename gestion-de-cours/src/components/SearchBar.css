@@ -1,0 +1,185 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'MontSerrat';
+    background-color: var(--bs-primary);
+    display: grid;
+    grid-auto-columns: 1fr 5fr;
+}
+
+main {
+    margin-left: 6rem;
+}
+
+/* Barre de recherche */
+.search-bar {
+    background-color: black;
+    border-radius: 40px;
+    padding: 15px;
+    display: flex;
+}
+
+.search-bar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    border: 0;
+    font-weight: 300;
+    font-family: "Montserrat";
+    outline: none;
+}
+
+.search-bar input[type="search"]::placeholder {
+    color: white;
+}
+
+.ajouter-btn {
+    text-decoration: none;
+    color: white;
+    background: green;
+    border-radius: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 44px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 16px;
+}
+
+/* Tableau de données */
+.table {
+    padding: 15px;
+    margin-top: 10px;
+    width: 99%;
+    background: white;
+    border: 3px solid black;
+    padding-top: 8px;
+}
+
+.ajouter-btn img {
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    background: darkgreen;
+    padding: 12px;
+    padding-right: 12px;
+    margin-left: 0px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 8px;
+}
+
+.table tr {
+    text-align: center;
+}
+
+.modifier-btn {
+    text-decoration: none;
+    color: white;
+    background: cadetblue;
+    border-radius: 10px;
+    width: fit-content;
+    height: 44px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 16px;
+}
+
+.modifier-btn img {
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    background: rgb(95, 136, 160);
+    padding: 12px;
+    padding-right: 12px;
+    padding-right: 12px;
+    margin-left: 0px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.supprimer-btn {
+    text-decoration: none;
+    color: white;
+    background: brown;
+    border-radius: 10px;
+    width: fit-content;
+    height: 44px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.supprimer-btn img {
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    background: rgba(101, 19, 19, 0.57);
+    padding: 12px;
+    padding-right: 12px;
+    padding-right: 12px;
+    margin-left: 0px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 8px;
+}
+
+.actionsLigne {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.form-row {
+    margin-bottom: 26px;
+}
+
+.form-row.form-group {
+    display: flex;
+}
+
+.form-row.form-group .form-holder {
+    width: 50%;
+    margin-right: 25px;
+}
+
+.form-row.form-group .form-holder:last-child {
+    margin-right: 0;
+}
+
+.form-holder {
+    position: relative;
+}
